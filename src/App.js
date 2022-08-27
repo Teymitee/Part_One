@@ -6,7 +6,7 @@ import Testimonials from "./components/Testimonials";
 import Blog from "./components/Blog";
 import CurrentMenu from "./components/CurrentMenu";
 import Footer from "./components/Footer";
-import {blogData, menu} from './data'
+import { blogData, menu } from "./data";
 
 class App extends React.Component {
   constructor(props) {
