@@ -1,0 +1,40 @@
+.reviews-wrapper {
+    background-color: hsl(355, 67%, 93%);
+}
+
+.reviews {
+    padding: 5rem 0;
+}
+
+.review-card {
+    background-color: #fafafa;
+}
+
+
+.card-img {
+    /* object-fit: cover; */
+    height: 40vh;
+    /* width: 100%; */
+}
+
+.current-menu {
+   background-color:  hsl(0, 0%, 98%);
+}
+
+
+.footer {
+    background-color: #fafafa;
+    padding: 4rem 0 0 0;
+}
+
+
+@media all and (max-width: 700px){
+    .banner {
+        
+        background-color: hsl(356, 69%, 54%);
+        color: #fafafa;
+
+    }    
+
+}
+
