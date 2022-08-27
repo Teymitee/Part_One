@@ -31,7 +31,7 @@ const Testimonials = () => (
               ></img>
               <h5 className="text-center pt-2">Temitope Enikankiselu</h5>
               <p className="text-center text-uppercase text-secondary">
-                Plateau, Nigeria
+                Kogi, Nigeria
               </p>
             </div>
             <div className="col-lg-7 p-2">
