@@ -45,7 +45,7 @@ const Banner = () => (
         </div>
       </div>
     </div>
-    <div className="d-flex pe-5 ">
+    <div className="d-flex pe-4 ">
       <FontAwesomeIcon icon={faMessage} className="btn ms-auto p-4 bg-danger shadow rounded-circle border border-none text-light bg-sm-none" size="2x"/>
     </div>
   </div>
