@@ -4,10 +4,10 @@ export const blogData = [
     date: "2nd August, 2022",
     picture:
       "https://kwickmeals.com/wp-content/uploads/2021/12/jollof-and-chicken-400x400-1.jpg",
-    name: "Jellof Rice and Chicken",
+    name: "Better than take out kung pao chicken",
     description:
-      "Fried potato/yam chips with egg sauce or any toppings of your choice",
-    price: "#1,500",
+      "This spicy, tangy, and sweet better than takeout no peanut kung pao chicken stry fry recipe",
+    price: "1,500",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const blogData = [
     name: "Jellof Rice and Chicken",
     description:
       "Fried potato/yam chips with egg sauce or any toppings of your choice",
-    price: "#1,500",
+    price: "1,500",
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ export const blogData = [
     name: "Jellof Rice and Chicken",
     description:
       "Fried potato/yam chips with egg sauce or any toppings of your choice",
-    price: "#1,500",
+    price: "1,500",
   },
 ];
 
@@ -39,7 +39,7 @@ export const menu = [
     name: "Jellof Rice and Chicken",
     description:
       "Fried potato/yam chips with egg sauce or any toppings of your choice",
-    price: "#1,500",
+    price: "1,500",
   },
   {
     id: 2,
@@ -48,7 +48,7 @@ export const menu = [
     name: "Swallow with Draw Soup",
     description:
       "Fried potato/yam chips with egg sauce or any toppings of your choice",
-    price: "#1,000",
+    price: "1,000",
   },
   {
     id: 3,
@@ -57,7 +57,7 @@ export const menu = [
     name: "Fries with Egg sauce",
     description:
       "Fried potato/yam chips with egg sauce or any toppings of your choice",
-    price: "#1,500",
+    price: "1,500",
   },
   {
     id: 4,
@@ -66,7 +66,7 @@ export const menu = [
     name: "Swallow with Egusi Soup",
     description:
       "Fried potato/yam chips with egg sauce or any toppings of your choice",
-    price: "#1,000",
+    price: "1,000",
   },
   {
     id: 5,
@@ -75,7 +75,7 @@ export const menu = [
     name: "Beans",
     description:
       "Fried potato/yam chips with egg sauce or any toppings of your choice",
-    price: "#700",
+    price: "700",
   },
   {
     id: 6,
@@ -84,6 +84,6 @@ export const menu = [
     name: "Fried Rice",
     description:
       "Fried potato/yam chips with egg sauce or any toppings of your choice",
-    price: "#600",
+    price: "600",
   },
 ];

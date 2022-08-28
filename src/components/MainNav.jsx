@@ -1,39 +1,74 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
 import { faShoppingCart, faSearch } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
 function MainNav() {
+  const [toggleClass, setToggleClass] = useState("");
+
+  const openSideNav = (_) => {
+    setToggleClass("d-block bg-light position-absolute side-nav");
+  };
+  const closeSideNav = (_) => {
+    setToggleClass("d-none");
+  };
+
   return (
-    <Navbar bg="light" expand="lg" className="py-4">
-      <Container>
-        <Navbar.Brand href="#home">Thyme-Out</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto nav-fill">
-            <Nav.Link href="#home" aria-current="page">
-              Home
-            </Nav.Link>
-            <Nav.Link href="#link">Menu</Nav.Link>
-            <Nav.Link href="#link">Meal Plans</Nav.Link>
-          </Nav>
-          <Nav className="ms-auto">
-            <Nav.Link>
-              <FontAwesomeIcon icon={faSearch} size="1x" />
-            </Nav.Link>
-            <Nav.Link>
-              <FontAwesomeIcon icon={faShoppingCart} />
-            </Nav.Link>
-            <Nav.Link href="#link">Sign in</Nav.Link>
-            <button className="btn btn-lg btn-danger rounded-pill">
-              Create Account
-            </button>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light py-4">
+        <div className="container">
+          <a className="navbar-brand" href="#Home">Thyme-Out</a>
+          <button className="navbar-toggler" onClick={openSideNav}>
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className={`collapse navbar-collapse ${toggleClass}`}>
+            <button className="d-lg-none btn border text-secondary" onClick={closeSideNav}>x</button>
+            <ul className="nav navbar-nav mr-auto ms-lg-5">
+              <li className="nav-item">
+                <a className="nav-link" href="#home">
+                  Home
+                </a>
+              </li>
+              <li className="nav-item ms-lg-4">
+                <a className="nav-link" href="#menu">
+                  Menu
+                </a>
+              </li>
+              <li className="nav-item ms-lg-4">
+                <a className="nav-link" href="#meal">
+                  Meal Plans
+                </a>
+              </li>
+            </ul>
+            <ul className="nav navbar-nav ps-lg-5 ms-lg-auto">
+              <li className="nav-item">
+                <a className="nav-link" href="#home">
+                  <FontAwesomeIcon icon={faSearch} />
+                </a>
+              </li>
+              <li className="nav-item ms-lg-2">
+                <a className="nav-link" href="#home">
+                  <FontAwesomeIcon icon={faShoppingCart} /> <span className="d-lg-none">My Tray</span>
+                </a>
+              </li>
+              <li className="nav-item ms-lg-5">
+                <a className="nav-link" href="#meanu">
+                  Sign in
+                </a>
+              </li>
+              <li className="nav-item ms-lg-5">
+                <a
+                  className="nav-link btn bg-danger text-light rounded-pill px-lg-4 "
+                  href="#meal"
+                >
+                  Create Account
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </>
   );
 }
 

@@ -10,10 +10,14 @@
   background-color: #fafafa;
 }
 
+.card {
+  height: 100%;
+}
+
 .card-img {
-  /* object-fit: cover; */
-  height: 40vh;
-  /* width: 100%; */
+  object-fit: cover;
+  /* height: 40vh; */
+  width: 100%;
 }
 
 .current-menu {
@@ -25,9 +29,41 @@
   padding: 4rem 0 0 0;
 }
 
-@media all and (max-width: 700px) {
+@media all and (max-width: 768px) {
   .banner {
     background-color: hsl(356, 69%, 54%);
     color: #fafafa;
+    height:max-content!important;
+    padding-bottom: 4rem;
+
   }
+
+  .hide-on-mobile {
+    display: none!important;
+  }
+  .banner-image {
+    border: none!important;
+    padding: 4rem;
+  }
+
+  
+
+
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.side-nav {
+  width: auto;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 1000;
+  text-align: left;
+  padding: 2rem;
 }

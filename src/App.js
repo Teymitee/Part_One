@@ -7,6 +7,7 @@ import Blog from "./components/Blog";
 import CurrentMenu from "./components/CurrentMenu";
 import Footer from "./components/Footer";
 import { blogData, menu } from "./data";
+import BlogCard from "./components/BlogCard";
 
 class App extends React.Component {
   constructor(props) {
@@ -29,7 +30,7 @@ class App extends React.Component {
     blogData.forEach((item) =>
       blogCards.push(
         <div className="col-lg-4 col-sm-12 card-wrapper" key={item.id}>
-          <ProductCard data={item} />
+          <BlogCard data={item} />
         </div>
       )
     );
