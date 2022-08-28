@@ -4,7 +4,7 @@ import "../Styles.css";
 
 
 const BlogCard = ({data}) => (
-  <Card className="shadow mb-4 mt-4 card">
+  <Card className="shadow mb-4 mt-4">
     <Card.Img variant="img-top" src={data.picture} className="card-img rounded-circle p-5" />
     <Card.Body className="p-4">
       <Card.Subtitle className="mb-4 text-danger">Design: <span className="text-secondary">{data.date}</span></Card.Subtitle>
